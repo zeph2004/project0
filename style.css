@@ -4,7 +4,7 @@ body {
     color: bisque;
 
     font-family: 'Google Sans', sans-serif;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 700; /* This is the numeric equivalent of 'bold' */
 
     display: flex;
@@ -24,6 +24,22 @@ body {
     align-items: center;
 
     margin-top: 100px;
+}
+
+.main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Google{
+    line-height: 0.6;
+}
+
+.Google p{
+    color: rgb(52, 77, 187);
+    font-size: 0.16em;
+    text-align: right;
+    line-height: 0;
 }
 
 .Google-Search-Bar{
@@ -58,7 +74,7 @@ body {
 .Google-Search-Bar input{
     width: 80%;
     height: 60%;
-    font-size: 40%;
+    font-size: 20%;
     font-weight: 300;
 
     border: none;
@@ -68,3 +84,57 @@ body {
 .Google-Search-Bar input:focus{
     outline: none;
 }
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 0.14em;
+    font-weight: 50;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.pfp {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 100%;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.pfp img {
+    width: 40px;
+    height: 120%;
+}
+
+#button {
+    width: 20%;
+    height: 60%;
+    background-color: rgb(202, 215, 222);
+    margin-right: 10px;
+    border-radius: 15px;
+
+}
+

@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Search</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Search</title>
+  <style>
+    :root{
+      --bg:#202124;
+      --text:#e8eaed;
+      --muted:#9aa0a6;
+      --line:#3c4043;
+      --accent:#f28b82;
+      --focus:#8ab4f8;
+      --input-border:#5f6368;
+      --button:#8ab4f8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      transform: scale(0.9);
+      transform-origin: top left;
+      width: 111.11%;
+    }
+
+    .header {
+      padding: 47px 0 25px 83px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 58px;
+      font-weight: 400;
+      color: var(--accent);
+    }
+
+    .content {
+      padding: 80px 0 0 83px;
+      max-width: 1440px;
+    }
+
+    .content h2 {
+      margin-bottom: 43px;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    form {
+      max-width: 1400px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 25px;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 28px;
+    }
+
+    .input {
+      height: 54px;
+      border: 2px solid var(--input-border);
+      background: transparent;
+      color: var(--text);
+      font-size: 22px;
+      padding: 0 14px;
+      outline: none;
+    }
+
+    .input:focus {
+      border-color: var(--focus);
+    }
+
+    .actions {
+      margin-top: 40px;
+      padding-left: 315px;
+    }
+
+    .btn {
+      background: var(--button);
+      color: var(--bg);
+      border: none;
+      padding: 14px 28px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <div class="header">
+    <h1>Advanced Search</h1>
+  </div>
+
+  <div class="content">
+    <h2>Find pages with...</h2>
+
+    <form>
+      <div class="form-row">
+        <div class="label">all these words:</div>
+        <input class="input" type="text" />
+      </div>
+
+      <div class="form-row">
+        <div class="label">this exact word or phrase:</div>
+        <input class="input" type="text" />
+      </div>
+
+      <div class="form-row">
+        <div class="label">any of these words:</div>
+        <input class="input" type="text" />
+      </div>
+
+      <div class="form-row">
+        <div class="label">none of these words:</div>
+        <input class="input" type="text" />
+      </div>
+
+      <div class="actions">
+        <button class="btn" type="submit">Advanced Search</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
