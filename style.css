@@ -138,7 +138,7 @@ body {
 
 }
 
-#lucky {
+.lucky {
     width: 140px;
     height: 50px;
     background-color: rgb(202, 215, 222);
