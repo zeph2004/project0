@@ -138,3 +138,13 @@ body {
 
 }
 
+#lucky {
+    width: 140px;
+    height: 50px;
+    background-color: rgb(202, 215, 222);
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-left: 230px;
+
+}
